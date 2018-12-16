@@ -1,16 +1,23 @@
 # flutter
-### Install Flutter
-* **Step 1 (clone the flutter repo)**
+### Install Flutter 
+* **Step 1 Download SDK flutter from**  
+https://flutter.io/docs/get-started/install/macos  
+then
+
 ```
-git clone https://github.com/flutter/flutter.git
+unzip ~/Downloads/flutter_macos_v1.0.0-stable.zip
+```
+* **Update flutter path**
+```
+Open (or create) $HOME/.bash_profile.
+export PATH="$PATH":"$HOME/Downloads/flutter/bin"
+```
+Restart terminal.
+```
+echo $PATH
 ```
 
-* **Step 2 (export the flutter path)**
-```
-export PATH=`pwd`/flutter/bin:$PATH
-```
-
-* **Step 3 (download flutter sdk)**
+* **Step 3 Run Flutter Doctor**
 ```
 flutter doctor
 ```
